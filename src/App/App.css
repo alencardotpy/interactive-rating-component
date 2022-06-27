@@ -1,0 +1,28 @@
+@import url("../index.css");
+.cardSurvey{
+    background:var(--DarkBlue);
+    width: 315px;
+    border-radius: 20px;
+    padding:25px;
+    display:flex;
+    flex-direction:column;
+    align-self: center;
+    margin:0 auto;
+    height:320px;
+}
+
+.card__btn{
+    width:280px;
+    height:40px;
+    margin:10px auto;
+    border-radius:20px;
+    border:none;
+    background:var(--Orange);
+    color:var(--White);
+    font-weight: var(--FontMediumWeight);
+    letter-spacing: 3px;
+}
+.card__btn--hover:hover{
+    background-color: var(--White);
+    color:var(--Orange);
+}
