@@ -1,5 +1,5 @@
 import React from "react";
-import ReactDOM from "react-dom";
+import { createRoot } from "react-dom/client";
 import "./index.css";
 import App from "./App/App";
 import reportWebVitals from "./reportWebVitals";
@@ -7,14 +7,16 @@ import { sendToVercelAnalytics } from "./vitals";
 import { BrowserRouter } from "react-router-dom";
 import AttributionContainer from "./Attribution/Attribution";
 
-ReactDOM.render(
+const container = document.getElementById("root");
+const root = createRoot(container);
+
+root.render(
   <BrowserRouter>
     <React.StrictMode>
       <App />
       <AttributionContainer />
     </React.StrictMode>
-  </BrowserRouter>,
-  document.getElementById("root")
+  </BrowserRouter>
 );
 
 reportWebVitals(sendToVercelAnalytics);
