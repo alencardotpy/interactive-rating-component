@@ -1,5 +1,6 @@
 @import url("../index.css");
-.cardSurvey{
+
+.card-survey{
     background:var(--DarkBlue);
     width: 315px;
     border-radius: 20px;
@@ -10,7 +11,17 @@
     margin:0 auto;
     height:320px;
 }
-
+.card-response{
+    background:var(--DarkBlue);
+    width: 315px;
+    border-radius: 20px;
+    padding:25px;
+    display:flex;
+    flex-direction:column;
+    align-self: center;
+    margin:0 auto;
+    height:320px;
+}
 .card__btn{
     width:280px;
     height:40px;
