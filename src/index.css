@@ -1,0 +1,36 @@
+:root{
+    --MobileWidth: 375px;
+    --DesktopWidth: 1440px;
+    /*Colors*/
+        /* Primary*/
+    --Orange: hsl(25, 97%, 53%);
+     /* Neutral */
+    --White: hsl(0, 0%, 100%);
+    --LightGrey: hsl(217, 12%, 63%);
+    --MediumGrey: hsl(216, 12%, 54%);
+    --DarkBlue: hsl(213, 19%, 18%);
+    --VeryDarkBlue: hsl(216, 12%, 8%);
+     /*Typography*/
+     /* Body Copy */
+    --FontSizeParagraph: 15px;
+        /* Font  Family*/
+    --FontFamily: Overpass;
+    --FontNormalWeight: 400;
+    --FontMediumWeight:700;
+    }
+
+
+.body{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background:var(--VeryDarkBlue);
+    color:var(--MediumGrey);
+    font-family: var(--FontFamily);
+    font-size: var(--FontSizeParagraph);
+    font-weight: var(--FontNormalWeight);
+    height:100vh;
+    padding:0;
+    margin: 0
+}
