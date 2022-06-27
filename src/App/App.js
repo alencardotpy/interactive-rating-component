@@ -1,14 +1,13 @@
-import { render } from "@testing-library/react";
-import { React, Component } from "react";
+import { Component } from "react";
 import SurveyCard from "../SurveyCard/SurveyCard";
-
+import SurveyResponse from "../SurveyResponse/SurveyResponse";
 import "./App.css";
 
-class App extends React.Component {
+class App extends Component {
   render() {
     return (
       <div className="App card">
-        <SurveyCard children={<Button />} />
+        <SurveyResponse children={<Button />} />
       </div>
     );
   }
