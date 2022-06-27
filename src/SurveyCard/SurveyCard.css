@@ -1,0 +1,51 @@
+@import url("../App/App.css");
+@import url("../index.css");
+
+
+.cardSurvey__image{
+    padding:15px;
+    border-radius:50%;
+    margin:10px 10px;
+    background-color: rgba(158, 158, 158, 0.122);
+}
+
+.cardSurvey__title{
+    color:white;
+    font-weight: var(--FontMediumWeight);
+    margin:10px 0;
+}
+.cardSurvey__text{
+    width:320px;
+    font-size:var(--FontSizeParagraph);
+}
+
+.cardSurvey__list{
+    list-style: none;
+    padding:0;
+    display:flex;
+    width:auto;
+    margin:0 auto;
+}
+.cardSurvey__listItem{
+    background-color: rgba(158, 158, 158, 0.118);
+    margin:auto 10px;
+    height:20px;
+    width:20px;
+    padding:10px;
+    border-radius:50%;
+    display:flex;
+    justify-content: center;
+    
+}
+.cardSurvey__listItem--selected{
+    background-color: var(--Orange);
+    color:var(--White);
+}
+.cardSurvey__listItem--unselected{
+    background-color:  rgba(158, 158, 158, 0.118);
+}
+
+.cardSurvey__listItem--unselected:hover{
+    background-color:  rgba(158, 158, 158, 0.415);
+    color: var(--White);
+}
