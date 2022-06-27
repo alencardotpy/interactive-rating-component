@@ -9,41 +9,41 @@ function clickHandle(e) {
     if (e.target.value === i) {
       document
         .getElementById("item" + i)
-        .classList.add("cardSurvey__listItem--selected");
+        .classList.add("card-survey__listItem--selected");
       document
         .getElementById("item" + i)
-        .classList.remove("cardSurvey__listItem--unselected");
+        .classList.remove("card-survey__listItem--unselected");
     } else {
       document
         .getElementById("item" + i)
-        .classList.add("cardSurvey__listItem--unselected");
+        .classList.add("card-survey__listItem--unselected");
       document
         .getElementById("item" + i)
-        .classList.remove("cardSurvey__listItem--selected");
+        .classList.remove("card-survey__listItem--selected");
     }
   }
 }
 
 function SurveyCard(props, children) {
   return (
-    <div className="cardSurvey">
+    <div className="card-survey">
       <img
-        className="cardSurvey__image"
+        className="card-survey__image"
         src={starImage}
         alt=""
         width="15"
         height="15"
       />
-      <h1 className="cardSurvey__title">How did we do?</h1>
-      <p className="cardSurvey__text">
+      <h1 className="card-survey__title">How did we do?</h1>
+      <p className="card-survey__text">
         Please let us know how we did with your support request. All feedback is
         appreciated to help us improve our offering!
       </p>
-      <ul className="cardSurvey__list">
+      <ul className="card-survey__list">
         {rates.map((item, key) => {
           return (
             <li
-              className="cardSurvey__listItem cardSurvey__listItem--unselected"
+              className="card-survey__listItem card-survey__listItem--unselected"
               id={"item" + item}
               key={key}
               onClick={clickHandle}
