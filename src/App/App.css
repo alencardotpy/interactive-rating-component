@@ -1,39 +1,162 @@
 @import url("../index.css");
 
+
+.card{
+    background:var(--DarkBlue);
+    width: 290px;
+    border-radius: 20px;
+    padding:10px 20px;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    margin:0 auto;
+    height:350px;
+}
+
+
 .card-survey{
-    background:var(--DarkBlue);
-    width: 315px;
-    border-radius: 20px;
-    padding:25px;
     display:flex;
     flex-direction:column;
-    align-self: center;
+    align-items: center;
+    justify-content: center;
+    align-self: flex-start;
     margin:0 auto;
-    height:320px;
+    height:330px;
+    width:290px;
+
+
 }
-.card-response{
-    background:var(--DarkBlue);
-    width: 315px;
-    border-radius: 20px;
-    padding:25px;
+
+.card-survey__image{
+    align-self: flex-start;
+    margin:0;
+    padding:13px;
+    border-radius:50%;
+    background-color: rgba(158, 158, 158, 0.122);
+    position: relative;
     display:flex;
-    flex-direction:column;
-    align-self: center;
-    margin:0 auto;
-    height:320px;
+    top:0;
+    
 }
-.card__btn{
+
+.card-survey__title{
+    color:white;
+    font-weight: 11px;
+    margin:20px 0 0 0;
+    align-self: flex-start;
+    
+    
+}
+
+.card-survey__message{
+    text-align: left;
+    font-size:14px;
+    font-weight:var(--FontNormalWeight);
+    margin: 15px auto 10px auto;
+    width:280px;
+    color:var(--LightGrey);
+    line-height:23px;
+    padding:0;
+
+}
+
+.card-survey__list{
+    list-style: none;
+    padding:0;
+    display:flex;
+    width:auto;
+    margin:10px auto 10px auto;
+    height:auto;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.card-survey__listItem{
+    background-color: rgba(158, 158, 158, 0.118);
+    margin:auto 10px ;
+    height:20px;
+    width:20px;
+    padding:10px;
+    border-radius:50%;
+    display:flex;
+    justify-content: center;
+    
+    
+}
+
+.card-survey__listItem--selected{
+    background-color: var(--Orange);
+    color:var(--White);
+}
+
+.card-survey__listItem--unselected{
+    background-color:  rgba(158, 158, 158, 0.118);
+}
+
+.card-survey__listItem--unselected:hover{
+    background-color:  rgba(158, 158, 158, 0.415);
+    color: var(--White);
+}
+
+.card-survey__btn{
     width:280px;
     height:40px;
-    margin:10px auto;
     border-radius:20px;
     border:none;
     background:var(--Orange);
     color:var(--White);
     font-weight: var(--FontMediumWeight);
     letter-spacing: 3px;
+    position: relative;
+    top:10px;
+   margin:5px auto;
+    
 }
-.card__btn--hover:hover{
+
+.card-survey__btn--hover:hover{
     background-color: var(--White);
     color:var(--Orange);
+}
+
+.card-response{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    margin:10px auto;
+    width:280px;
+}
+
+.card-respose__image{
+    display:flex;
+    width:auto;
+    margin:10px auto;
+}
+
+.card-response__state-choice{
+    background:rgba(158, 158, 158, 0.118);
+    padding:8px 10px;
+    border-radius: 20px;
+    color:var(--Orange);
+    text-align: center;
+    margin:20px auto 10px auto;
+    height:18px;
+}
+
+.card-response__title{
+    font-size: 25px;
+    color:var(--White);
+    margin:10px auto;
+
+}
+
+.card-response__message{
+    width:290px;
+    margin:0 10px; 
+    font-size:var(--FontSizeParagraph);
+    text-align: center;
+
 }
