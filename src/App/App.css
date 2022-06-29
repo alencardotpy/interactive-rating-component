@@ -15,7 +15,6 @@
     height:350px;
 }
 
-
 .card-survey{
     display:flex;
     flex-direction:column;
@@ -42,6 +41,7 @@
 }
 
 .card-survey__title{
+    font-size: 25px;
     color:white;
     font-weight: 11px;
     margin:20px 0 0 0;
@@ -160,3 +160,19 @@
     text-align: center;
 
 }
+
+.card-animate-enter {
+    opacity: 0;
+  }
+  .card-animate-enter-active {
+    opacity: 0.5;
+    transition: opacity 100ms ease-in;
+  }
+  .card-animate-exit {
+    opacity: .8;
+    transition: opacity 100ms;
+  }
+  .card-animate-exit-active {
+    opacity: 1;
+    transition: opacity 20ms ease-in;
+  }
