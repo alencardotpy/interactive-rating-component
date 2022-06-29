@@ -4,10 +4,10 @@
  width:auto;
  margin:10px auto;
  display:flex;
- flex-direction: row;
+ flex-direction: auto;
  align-items: center;
  justify-content: center;
- padding:0;
+ text-align: center;
 }
 
 .attribution__text{
@@ -15,12 +15,10 @@
     flex-direction: inherit;
     align-items: inherit;
     justify-content: inherit;
-    width:auto;
 }
 
 .attribution__link{
     display:flex;
-    flex-direction: row;
     align-items: center;
     justify-content: center;
     margin:0 5px;
@@ -42,3 +40,9 @@
     height:20px;
     border-bottom: 1px solid var(--White);
 }    
+
+@media screen and (max-width:374px){
+    .attribution{
+        flex-direction: column;
+    }
+}
