@@ -18,7 +18,6 @@ class App extends Component {
   }
 
   handleSubmit() {
-    console.log("handle submit");
     this.setState((state) => {
       return state.card === 0 ? { card: 1 } : { card: 0 };
     });
@@ -26,7 +25,7 @@ class App extends Component {
 
   clickHandle(e) {
     for (let i = 1; i <= rates.length; i++) {
-      if (e.target.value === i) {
+      if (e.target.id === "item" + i) {
         document
           .getElementById("item" + i)
           .classList.add("card-survey__listItem--selected");
@@ -81,7 +80,7 @@ const SurveyCard = (props) => {
         width="15"
         height="15"
       />
-      <p className="card-survey__title">How did we do?</p>
+      <h1 className="card-survey__title">How did we do?</h1>
       <p className="card-survey__message">
         Please let us know how we did with your support request. All feedback is
         appreciated to help us improve our offering!
@@ -94,7 +93,6 @@ const SurveyCard = (props) => {
               id={"item" + item}
               key={key}
               onClick={props.clickHandle}
-              value={item}
             >
               {item}
             </li>
@@ -125,7 +123,7 @@ const SurveyResponse = (props) => {
       <p className="card-response__state-choice">
         You selected <strong>{props.data}</strong> out of <strong>5</strong>
       </p>
-      <p className="card-response__title">Thank You</p>
+      <h2 className="card-response__title">Thank You</h2>
       <p className="card-response__message">
         We appreciate you taking the time to give a rating. If you ever need
         more support, don’t hesitate to get in touch!
