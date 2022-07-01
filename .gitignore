@@ -11,6 +11,7 @@
 # production
 /build
 /dist
+/frontendmentor-project
 
 # misc
 .DS_Store
